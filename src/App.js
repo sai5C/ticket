@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Ticket from './Ticket';
+import TicketsTable from './TicketsTable';
+import MeetingTable from './MeetingTable';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+const App = () =>
+  <div>
+    <Ticket />
+    <h1 className='ml-10 text-2xl mt-5'> Tickets</h1>
+    <TicketsTable />
+    <hr/>
+    <div style={{marginTop:"200px"}}>
+
     </div>
-  );
-}
+    <h1 className='ml-10 text-2xl mt-5'> Meetings</h1>
+    <MeetingTable />
+  </div>
+
 
 export default App;
+
