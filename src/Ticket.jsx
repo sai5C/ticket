@@ -68,7 +68,7 @@ const Ticket = () => {
     if (!selectedValue || !inputValue || !updatedValue) {
       alert("Please enter all values to procced!")
     } else {
-      postData()
+      // postData()
       setUpdatedValue(null);
       setInputValue('');
       setSelectedValue(null)
